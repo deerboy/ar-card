@@ -22,13 +22,26 @@ p {
   margin: 0;
 }
 
+@keyframes movein {
+  0% {
+    transform: translateX(150%);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 .sns {
   position: absolute;
+  transform: translateX(150%);
   bottom: 100%;
   right: 0;
   display: flex;
   color: #111;
   height: 56px;
+  animation: movein ease-out 0.5s 1s forwards;
 }
 .sns:before {
   content: '';
