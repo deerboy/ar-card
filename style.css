@@ -1,6 +1,7 @@
 body {
   margin: 0;
   overflow: hidden;
+  font-family: sans-serif;
 }
 
 .bar {
@@ -32,6 +33,7 @@ p {
 .sns:before {
   content: '';
   position: absolute;
+  display: block;
   z-index: -1;
   top: 0;
   left: -28px;
