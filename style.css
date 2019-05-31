@@ -1,0 +1,10 @@
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+.sns {
+  position: fixed;
+  top: 30px;
+  left: 30px;
+}
