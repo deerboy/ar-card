@@ -24,7 +24,7 @@ p {
 
 @keyframes movein {
   0% {
-    transform: translateX(150%);
+    transform: translateX(-150%);
     opacity: 0;
   }
   100% {
@@ -35,9 +35,9 @@ p {
 
 .sns {
   position: absolute;
-  transform: translateX(150%);
+  transform: translateX(-150%);
   bottom: 100%;
-  right: 0;
+  left: 0;
   display: flex;
   color: #111;
   height: 56px;
@@ -49,11 +49,11 @@ p {
   display: block;
   z-index: -1;
   top: 0;
-  left: -28px;
+  right: -16px;
   width: 140%;
   height: 56px;
   background: #fff;
-  transform: skewX(-36deg);
+  transform: skewX(36deg);
 }
 .sns__item {
   color: inherit;
