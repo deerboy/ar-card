@@ -7,10 +7,11 @@
   <a-scene embedded arjs="debugUIEnabled:false;trackingMethod:best;" vr-mode-ui="enabled: false">
     <a-assets>
       <a-asset-item id="sample-obj" src="objs/deer/deer.obj"></a-asset-item>
+      <a-asset-item id="sample-mtl" src="objs/deer/deer.mtl"></a-asset-item>
     </a-assets>
     　　　　　　　　
     <a-marker preset="hiro">
-      <a-obj-model id="sample" src="#sample-obj" position="0 0 0" scale="0.1 0.1 0.1" rotation="0 0 0"></a-obj-model>
+      <a-obj-model id="sample" src="#sample-obj" mtl="#sample-mtl" position="0 0 0" scale="0.5 0.5 0.5" rotation="0 0 0"></a-obj-model>
     </a-marker>
     <a-entity camera></a-entity>
   </a-scene>
