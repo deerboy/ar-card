@@ -41,7 +41,7 @@ p {
   display: flex;
   color: #111;
   height: 56px;
-  animation: movein ease-out 0.5s 5s forwards;
+  animation: movein ease-out 0.5s 3s forwards;
 }
 .sns:before {
   content: '';
