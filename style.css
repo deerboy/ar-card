@@ -27,10 +27,8 @@ p {
   bottom: 100%;
   right: 0;
   display: flex;
-  background: #fff;
   color: #111;
   height: 56px;
-  overflow: hidden;
 }
 .sns:before {
   content: '';
@@ -39,7 +37,7 @@ p {
   z-index: -1;
   top: 0;
   left: -28px;
-  width: 96px;
+  width: 140%;
   height: 56px;
   background: #fff;
   transform: skewX(-36deg);
