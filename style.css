@@ -3,20 +3,74 @@ body {
   overflow: hidden;
 }
 
-.sns {
+.bar {
   position: fixed;
-  background: rgba(0, 0, 0, 0.9);
   bottom: 0;
   left: 0;
   width: 100%;
+  background: rgba(0, 0, 0, 0.9);
   color: white;
   display: flex;
-  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  box-sizing: border-box;
+  justify-content: space-between;
 }
 
-a {
+p {
+  margin: 0;
+}
+
+.sns {
+  position: absolute;
+  bottom: 100%;
+  right: 0;
+  display: flex;
+  background: #fff;
+  color: #111;
+}
+.sns:before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: -28px;
+  width: 96px;
+  height: 56px;
+  background: #fff;
+  transform: skewX(-36deg);
+}
+.sns__item {
   color: inherit;
   display: block;
-  padding: 32px;
-  font-size: 32px;
+  padding: 16px;
+  font-size: 24px;
+  line-height: 1;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+}
+.profile__avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: block;
+  background: center/cover url(avatar.png);
+  margin: 0;
+}
+.profile__body {
+  padding-left: 16px;
+}
+.profile__name {
+  font-size: 14px;
+  line-height: 1;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+.profile__description {
+  font-size: 12px;
+  line-height: 1;
+  opacity: 0.6;
 }
