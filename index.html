@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="style.css">
 
 <body>
-  <a-scene embedded arjs="debugUIEnabled:false;trackingMethod:best;" vr-mode-ui="enabled: false">
+  <a-scene embedded arjs="sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;" vr-mode-ui="enabled: false">
     <a-assets>
       <a-asset-item id="sample-obj" src="obj/deer.obj"></a-asset-item>
       <a-asset-item id="sample-mtl" src="obj/deer.mtl"></a-asset-item>
