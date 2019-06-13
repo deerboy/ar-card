@@ -2,23 +2,57 @@
 <html>
 <script src="https://aframe.io/releases/0.9.1/aframe.min.js"></script>
 <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.7.1/aframe/build/aframe-ar.js"></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <script src="https://kit.fontawesome.com/6622c11e24.js"></script>
-<script src="https://unpkg.com/aframe-particle-system-component@1.0.x/dist/aframe-particle-system-component.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" defer></script>
+<script src="script.js" defer></script>
+<script
+  src="https://unpkg.com/aframe-particle-system-component@1.0.x/dist/aframe-particle-system-component.min.js"></script>
 <link rel="stylesheet" href="style.css">
 
 <body>
-  <a-scene embedded arjs="sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;" vr-mode-ui="enabled: false">
+  <a href="" class="info-trg js-menu-trg">
+    <i class="material-icons open">
+      menu
+    </i>
+    <i class="material-icons close">
+      close
+    </i>
+  </a>
+  <a-scene embedded
+    arjs="sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;"
+    vr-mode-ui="enabled: false">
     <a-assets>
       <a-asset-item id="sample-obj" src="obj/deer.obj"></a-asset-item>
       <a-asset-item id="sample-mtl" src="obj/deer.mtl"></a-asset-item>
     </a-assets>
     　　　　　　　　
     <a-marker type='barcode' value='6'>
-      <a-obj-model id="sample" src="#sample-obj" mtl="#sample-mtl" position="0 0 0" scale="1 1 1" rotation="0 90 0"></a-obj-model>
+      <a-obj-model id="sample" src="#sample-obj" mtl="#sample-mtl" position="0 0 0" scale="1 1 1" rotation="0 90 0">
+      </a-obj-model>
       <a-text position="0 2 1" scale="7 7 7" align="center" value="LnyYJQEq" color="crimson"></a-text>
     </a-marker>
     <a-entity camera></a-entity>
   </a-scene>
+  <div class="info">
+    <div class="card">
+      <figure class="card__thumbnail" style="background-image: url(./full-avatar.png)"></figure>
+      <h2 class="card__title">Nino Lab</h2>
+      <p class="card__description">YouTubeで技術動画発信</p>
+      <div class="card__btn">
+        <a href="https://www.youtube.com/channel/UCUPq5dKFGnOziaqYI-ejYcg?view_as=subscriber" target="_blank"
+          class="btn">サイトへ</a>
+      </div>
+    </div>
+    <div class="card">
+      <figure class="card__thumbnail" style="background-image: url(./update.png)"></figure>
+      <h2 class="card__title">Update</h2>
+      <p class="card__description">無業者向け職業訓練事業</p>
+      <div class="card__btn">
+        <a href="https://update.jp/" target="_blank" class="btn">サイトへ</a>
+      </div>
+    </div>
+  </div>
   <div class="bar">
     <div class="profile">
       <figure class="profile__avatar"></figure>
@@ -29,10 +63,13 @@
     </div>
     <div class="sns">
       <a class="sns__item" href="https://twitter.com/d151005" target="_blank"><i class="fab fa-twitter"></i></a>
-      <a class="sns__item" href="https://www.youtube.com/channel/UCUPq5dKFGnOziaqYI-ejYcg/playlists?view_as=subscriber" target="_blank"><i class="fab fa-youtube"></i></a>
+      <a class="sns__item" href="https://www.youtube.com/channel/UCUPq5dKFGnOziaqYI-ejYcg/playlists?view_as=subscriber"
+        target="_blank"><i class="fab fa-youtube"></i></a>
       <a class="sns__item" href="https://github.com/deerboy" target="_blank"><i class="fab fa-github"></i></a>
-      <a class="sns__item" href="https://www.facebook.com/dninomiya.deer" target="_blank"><i class="fab fa-facebook-square"></i></a>
+      <a class="sns__item" href="https://www.facebook.com/dninomiya.deer" target="_blank"><i
+          class="fab fa-facebook-square"></i></a>
     </div>
   </div>
 </body>
+
 </html>
